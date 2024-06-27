@@ -34,7 +34,7 @@
     * Ensure all tests, including the original ones, still pass
 
 
-Remember:
-•	Follow the Red-Green-Refactor cycle strictly
-•	Write the simplest code possible to make tests pass
-•	Only refactor when tests are green
+### **Remember:**
+   * Follow the Red-Green-Refactor cycle strictly
+   * Write the simplest code possible to make tests pass
+   * Only refactor when tests are green
