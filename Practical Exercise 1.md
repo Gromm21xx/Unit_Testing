@@ -1,31 +1,42 @@
-# Modules, Packages & Virtual Environments
+# Unit Testing
 
-## Practical Exercise 1: Creating Modules
+## Practical Exercise 1: Unit Testing with pytest
 
 ## Exercise instructions:
 
 
-1. Create a new directory called customer_management on your desktop. 
-2. Inside the customer_management directory, create a new file called customer.py. 
-3. Copy and paste the Customer class code from the previous session into customer.py. 
-4. Create another file in the customer_management directory called customer_utils.py. 
-5. In customer_utils.py, define two new utility functions: 
-    * get_preferred_customers(customers): This function should take a list of customer instances and return a list of preferred customers based on the criteria of total spent > 1000 or membership length > 2. 
-    * get_customer_emails(customers): This function should take a list of customer instances and return a list of their email addresses. 
-6. Create a new file in the customer_management directory called main.py. 
-7. In main.py, import the necessary classes and functions: 
-    * Import the pandas library. 
-    * Import the Customer class from the customer module. 
-    * Import the get_preferred_customers and get_customer_emails functions from the customer_utils module. 
-8.  Load the "Ecommerce Customers.csv" dataset using pandas, just like in the previous session. 
-9.  Create instances of the Customer class based on the dataset, similar to the previous session. 
-10. Use the newly created utility functions get_preferred_customers and get_customer_emails to perform operations on the customer instances. 
-11. Print the preferred customers' information and the list of customer emails. 
-12. Run the main.py script and observe the output. 
-    
-**Stretch Activity:**
 
-1. Open the customer_utils.py file. 
-2. Add a new utility function called get_top_spenders(customers, n) that takes a list of customer instances and an integer n as parameters. This function should return the top n customers based on their total amount spent. 
-3. Open the main.py file and import the get_top_spenders function from the customer_utils module. 
-4. Call the get_top_spenders function with the list of customers and a desired value of n, and print the information of the top spenders.
+1. Create a new file: 
+   * Open your code editor 
+   * Create a new file named test_customer.py in the same directory as your main code file 
+2. Import required modules and class: 
+   * At the top of test_customer.py, import pytest and the Customer class from your main file 
+   * Write test functions: 
+     Create three test functions in test_customer.py:
+         *  a) test_get_membership_level()
+         * b) test_get_customer_info()
+         * c) test_customer_attributes() 
+         * Test the get_membership_level method: 
+         * In test_get_membership_level(), create three Customer objects with different membership lengths 
+         * Use assert statements to check if each customer's membership level is correct 
+4. Test the get_customer_info method: 
+         * In test_get_customer_info(), create a Customer object 
+         * Define the expected info string 
+         * Use an assert statement to check if the method's output matches the expected string 
+5. Test the Customer attributes: 
+         * In test_customer_attributes(), create a Customer object 
+         * Use assert statements to check if the object's attributes match the values you provided 
+6. Save the file: 
+         * Make sure to save test_customer.py after adding all the test functions 
+7. Run the tests: 
+         * Open your terminal or command prompt 
+         * Navigate to the directory containing your Python files 
+         * Run the command: pytest test_customer.py 
+8. Observe the results: 
+         * pytest will run all the tests and display the results 
+         * You should see output indicating whether each test passed or failed
+   
+**Remember:**
+Use the AAA (Arrange-Act-Assert) pattern in your tests 
+Consider different scenarios, including edge cases 
+Use meaningful test function names that describe what's being tested
