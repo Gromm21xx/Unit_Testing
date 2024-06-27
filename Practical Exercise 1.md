@@ -13,9 +13,9 @@
    * At the top of test_customer.py, import pytest and the Customer class from your main file 
    * Write test functions: 
      Create three test functions in test_customer.py:
-          *  a) test_get_membership_level()
-          * b) test_get_customer_info()
-         * c) test_customer_attributes() 
+        *  a) test_get_membership_level()
+        * b) test_get_customer_info()
+        * c) test_customer_attributes() 
          * Test the get_membership_level method: 
          * In test_get_membership_level(), create three Customer objects with different membership lengths 
          * Use assert statements to check if each customer's membership level is correct 
