@@ -1,6 +1,6 @@
 # Unit Testing
 
-## Practical Exercise 2: Test Driven Design
+## TDD Exercise 2: Test Driven Design
 
 ## Exercise instructions:
 
