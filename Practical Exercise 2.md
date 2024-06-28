@@ -1,6 +1,6 @@
 # Unit Testing
 
-## Practical Exercise 1: Unit Testing with pytest
+## Practical Exercise 2: Unit Testing with pytest
 
 ## Exercise instructions:
 
